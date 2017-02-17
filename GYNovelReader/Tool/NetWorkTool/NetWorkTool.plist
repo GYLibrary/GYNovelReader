@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>WebRoot</key>
+	<string>https://app.kujiang.com</string>
+	<key>Path</key>
+	<dict>
+		<key>QQLogin</key>
+		<string>/v1/qq/login</string>
+	</dict>
+	<key>Params</key>
+	<dict/>
+</dict>
+</plist>

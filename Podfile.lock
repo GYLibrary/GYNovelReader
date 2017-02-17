@@ -1,0 +1,24 @@
+PODS:
+  - GYNavTranstion (0.0.2)
+  - GYNetWorking (0.0.9)
+  - MJRefresh (3.1.12)
+  - ObjectMapper (2.2.2)
+  - SnapKit (3.1.2)
+
+DEPENDENCIES:
+  - GYNavTranstion (~> 0.0.2)
+  - GYNetWorking (~> 0.0.9)
+  - MJRefresh (~> 3.1.12)
+  - ObjectMapper (~> 2.2.2)
+  - SnapKit (~> 3.1.2)
+
+SPEC CHECKSUMS:
+  GYNavTranstion: 53a3bcaabd209e691c6ad3bbb9618deedc245084
+  GYNetWorking: b7bef888204ee14f7204308744e3b7dc5bd362a6
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  ObjectMapper: 9e385c2295bcc4e16eabbcfc85db801442bba545
+  SnapKit: 12b24f569cb7c143acc9c22b9d91b23e7b1c84a2
+
+PODFILE CHECKSUM: f77c3c4cba9617cf631bc5eeda394dc3de87df71
+
+COCOAPODS: 1.2.0.beta.3

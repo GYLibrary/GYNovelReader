@@ -1,0 +1,647 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7FE9C081E56C6D400CA3433 /* GYAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE9C071E56C6D400CA3433 /* GYAppDelegate.swift */; };
+		B7FE9C0A1E56C6D400CA3433 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE9C091E56C6D400CA3433 /* ViewController.swift */; };
+		B7FE9C0D1E56C6D400CA3433 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7FE9C0B1E56C6D400CA3433 /* Main.storyboard */; };
+		B7FE9C0F1E56C6D400CA3433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7FE9C0E1E56C6D400CA3433 /* Assets.xcassets */; };
+		B7FE9C121E56C6D400CA3433 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7FE9C101E56C6D400CA3433 /* LaunchScreen.storyboard */; };
+		B7FE9C1D1E56C6D400CA3433 /* GYNovelReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE9C1C1E56C6D400CA3433 /* GYNovelReaderTests.swift */; };
+		B7FE9C281E56C6D400CA3433 /* GYNovelReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE9C271E56C6D400CA3433 /* GYNovelReaderUITests.swift */; };
+		B7FE9C391E56C9F300CA3433 /* NetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE9C381E56C9F300CA3433 /* NetWorkTool.swift */; };
+		B7FE9C3B1E56D07300CA3433 /* NetWorkTool.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7FE9C3A1E56D07300CA3433 /* NetWorkTool.plist */; };
+		D0210A326ED48C2C41678EB8 /* Pods_GYNovelReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7516440D882262968052AA7 /* Pods_GYNovelReader.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7FE9C191E56C6D400CA3433 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7FE9BFC1E56C6D400CA3433 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7FE9C031E56C6D400CA3433;
+			remoteInfo = GYNovelReader;
+		};
+		B7FE9C241E56C6D400CA3433 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7FE9BFC1E56C6D400CA3433 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7FE9C031E56C6D400CA3433;
+			remoteInfo = GYNovelReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2ADB45918241A4ACA44FB21D /* Pods-GYNovelReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYNovelReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-GYNovelReader/Pods-GYNovelReader.release.xcconfig"; sourceTree = "<group>"; };
+		ACED9FE0C8C89B90B9782327 /* Pods-GYNovelReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYNovelReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GYNovelReader/Pods-GYNovelReader.debug.xcconfig"; sourceTree = "<group>"; };
+		B7516440D882262968052AA7 /* Pods_GYNovelReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GYNovelReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7FE9C041E56C6D400CA3433 /* GYNovelReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYNovelReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7FE9C071E56C6D400CA3433 /* GYAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYAppDelegate.swift; sourceTree = "<group>"; };
+		B7FE9C091E56C6D400CA3433 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B7FE9C0C1E56C6D400CA3433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7FE9C0E1E56C6D400CA3433 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7FE9C111E56C6D400CA3433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7FE9C131E56C6D400CA3433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7FE9C181E56C6D400CA3433 /* GYNovelReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GYNovelReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7FE9C1C1E56C6D400CA3433 /* GYNovelReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYNovelReaderTests.swift; sourceTree = "<group>"; };
+		B7FE9C1E1E56C6D400CA3433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7FE9C231E56C6D400CA3433 /* GYNovelReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GYNovelReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7FE9C271E56C6D400CA3433 /* GYNovelReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYNovelReaderUITests.swift; sourceTree = "<group>"; };
+		B7FE9C291E56C6D400CA3433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7FE9C381E56C9F300CA3433 /* NetWorkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkTool.swift; sourceTree = "<group>"; };
+		B7FE9C3A1E56D07300CA3433 /* NetWorkTool.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NetWorkTool.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7FE9C011E56C6D400CA3433 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0210A326ED48C2C41678EB8 /* Pods_GYNovelReader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7FE9C151E56C6D400CA3433 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7FE9C201E56C6D400CA3433 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E46E192A7B6A741EEE96F52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7516440D882262968052AA7 /* Pods_GYNovelReader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7FE9BFB1E56C6D400CA3433 = {
+			isa = PBXGroup;
+			children = (
+				B7FE9C061E56C6D400CA3433 /* GYNovelReader */,
+				B7FE9C1B1E56C6D400CA3433 /* GYNovelReaderTests */,
+				B7FE9C261E56C6D400CA3433 /* GYNovelReaderUITests */,
+				B7FE9C051E56C6D400CA3433 /* Products */,
+				F94B1AB681DE934A132A0BF5 /* Pods */,
+				6E46E192A7B6A741EEE96F52 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B7FE9C051E56C6D400CA3433 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7FE9C041E56C6D400CA3433 /* GYNovelReader.app */,
+				B7FE9C181E56C6D400CA3433 /* GYNovelReaderTests.xctest */,
+				B7FE9C231E56C6D400CA3433 /* GYNovelReaderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7FE9C061E56C6D400CA3433 /* GYNovelReader */ = {
+			isa = PBXGroup;
+			children = (
+				B7FE9C361E56C94400CA3433 /* Tool */,
+				B7FE9C351E56C93D00CA3433 /* Classes */,
+				B7FE9C071E56C6D400CA3433 /* GYAppDelegate.swift */,
+				B7FE9C091E56C6D400CA3433 /* ViewController.swift */,
+				B7FE9C0B1E56C6D400CA3433 /* Main.storyboard */,
+				B7FE9C0E1E56C6D400CA3433 /* Assets.xcassets */,
+				B7FE9C101E56C6D400CA3433 /* LaunchScreen.storyboard */,
+				B7FE9C131E56C6D400CA3433 /* Info.plist */,
+			);
+			path = GYNovelReader;
+			sourceTree = "<group>";
+		};
+		B7FE9C1B1E56C6D400CA3433 /* GYNovelReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7FE9C1C1E56C6D400CA3433 /* GYNovelReaderTests.swift */,
+				B7FE9C1E1E56C6D400CA3433 /* Info.plist */,
+			);
+			path = GYNovelReaderTests;
+			sourceTree = "<group>";
+		};
+		B7FE9C261E56C6D400CA3433 /* GYNovelReaderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B7FE9C271E56C6D400CA3433 /* GYNovelReaderUITests.swift */,
+				B7FE9C291E56C6D400CA3433 /* Info.plist */,
+			);
+			path = GYNovelReaderUITests;
+			sourceTree = "<group>";
+		};
+		B7FE9C351E56C93D00CA3433 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B7FE9C361E56C94400CA3433 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				B7FE9C371E56C94400CA3433 /* NetWorkTool */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		B7FE9C371E56C94400CA3433 /* NetWorkTool */ = {
+			isa = PBXGroup;
+			children = (
+				B7FE9C381E56C9F300CA3433 /* NetWorkTool.swift */,
+				B7FE9C3A1E56D07300CA3433 /* NetWorkTool.plist */,
+			);
+			path = NetWorkTool;
+			sourceTree = "<group>";
+		};
+		F94B1AB681DE934A132A0BF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACED9FE0C8C89B90B9782327 /* Pods-GYNovelReader.debug.xcconfig */,
+				2ADB45918241A4ACA44FB21D /* Pods-GYNovelReader.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7FE9C031E56C6D400CA3433 /* GYNovelReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7FE9C2C1E56C6D400CA3433 /* Build configuration list for PBXNativeTarget "GYNovelReader" */;
+			buildPhases = (
+				CEAF99A2A8C30D8C828FA740 /* [CP] Check Pods Manifest.lock */,
+				B7FE9C001E56C6D400CA3433 /* Sources */,
+				B7FE9C011E56C6D400CA3433 /* Frameworks */,
+				B7FE9C021E56C6D400CA3433 /* Resources */,
+				DA5DE2C8F0A4A19E92CAB602 /* [CP] Embed Pods Frameworks */,
+				CC5DC176D30F07C87FC12BA3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GYNovelReader;
+			productName = GYNovelReader;
+			productReference = B7FE9C041E56C6D400CA3433 /* GYNovelReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B7FE9C171E56C6D400CA3433 /* GYNovelReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7FE9C2F1E56C6D400CA3433 /* Build configuration list for PBXNativeTarget "GYNovelReaderTests" */;
+			buildPhases = (
+				B7FE9C141E56C6D400CA3433 /* Sources */,
+				B7FE9C151E56C6D400CA3433 /* Frameworks */,
+				B7FE9C161E56C6D400CA3433 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7FE9C1A1E56C6D400CA3433 /* PBXTargetDependency */,
+			);
+			name = GYNovelReaderTests;
+			productName = GYNovelReaderTests;
+			productReference = B7FE9C181E56C6D400CA3433 /* GYNovelReaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B7FE9C221E56C6D400CA3433 /* GYNovelReaderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7FE9C321E56C6D400CA3433 /* Build configuration list for PBXNativeTarget "GYNovelReaderUITests" */;
+			buildPhases = (
+				B7FE9C1F1E56C6D400CA3433 /* Sources */,
+				B7FE9C201E56C6D400CA3433 /* Frameworks */,
+				B7FE9C211E56C6D400CA3433 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7FE9C251E56C6D400CA3433 /* PBXTargetDependency */,
+			);
+			name = GYNovelReaderUITests;
+			productName = GYNovelReaderUITests;
+			productReference = B7FE9C231E56C6D400CA3433 /* GYNovelReaderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7FE9BFC1E56C6D400CA3433 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = GYJade;
+				TargetAttributes = {
+					B7FE9C031E56C6D400CA3433 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = UZZG6NM74T;
+						ProvisioningStyle = Automatic;
+					};
+					B7FE9C171E56C6D400CA3433 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = UZZG6NM74T;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B7FE9C031E56C6D400CA3433;
+					};
+					B7FE9C221E56C6D400CA3433 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = UZZG6NM74T;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B7FE9C031E56C6D400CA3433;
+					};
+				};
+			};
+			buildConfigurationList = B7FE9BFF1E56C6D400CA3433 /* Build configuration list for PBXProject "GYNovelReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7FE9BFB1E56C6D400CA3433;
+			productRefGroup = B7FE9C051E56C6D400CA3433 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7FE9C031E56C6D400CA3433 /* GYNovelReader */,
+				B7FE9C171E56C6D400CA3433 /* GYNovelReaderTests */,
+				B7FE9C221E56C6D400CA3433 /* GYNovelReaderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7FE9C021E56C6D400CA3433 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7FE9C121E56C6D400CA3433 /* LaunchScreen.storyboard in Resources */,
+				B7FE9C0F1E56C6D400CA3433 /* Assets.xcassets in Resources */,
+				B7FE9C0D1E56C6D400CA3433 /* Main.storyboard in Resources */,
+				B7FE9C3B1E56D07300CA3433 /* NetWorkTool.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7FE9C161E56C6D400CA3433 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7FE9C211E56C6D400CA3433 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CC5DC176D30F07C87FC12BA3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GYNovelReader/Pods-GYNovelReader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEAF99A2A8C30D8C828FA740 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DA5DE2C8F0A4A19E92CAB602 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GYNovelReader/Pods-GYNovelReader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7FE9C001E56C6D400CA3433 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7FE9C391E56C9F300CA3433 /* NetWorkTool.swift in Sources */,
+				B7FE9C0A1E56C6D400CA3433 /* ViewController.swift in Sources */,
+				B7FE9C081E56C6D400CA3433 /* GYAppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7FE9C141E56C6D400CA3433 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7FE9C1D1E56C6D400CA3433 /* GYNovelReaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7FE9C1F1E56C6D400CA3433 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7FE9C281E56C6D400CA3433 /* GYNovelReaderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7FE9C1A1E56C6D400CA3433 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7FE9C031E56C6D400CA3433 /* GYNovelReader */;
+			targetProxy = B7FE9C191E56C6D400CA3433 /* PBXContainerItemProxy */;
+		};
+		B7FE9C251E56C6D400CA3433 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7FE9C031E56C6D400CA3433 /* GYNovelReader */;
+			targetProxy = B7FE9C241E56C6D400CA3433 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B7FE9C0B1E56C6D400CA3433 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7FE9C0C1E56C6D400CA3433 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B7FE9C101E56C6D400CA3433 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7FE9C111E56C6D400CA3433 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7FE9C2A1E56C6D400CA3433 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B7FE9C2B1E56C6D400CA3433 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7FE9C2D1E56C6D400CA3433 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACED9FE0C8C89B90B9782327 /* Pods-GYNovelReader.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UZZG6NM74T;
+				INFOPLIST_FILE = GYNovelReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ozner.GYNovelReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B7FE9C2E1E56C6D400CA3433 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2ADB45918241A4ACA44FB21D /* Pods-GYNovelReader.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UZZG6NM74T;
+				INFOPLIST_FILE = GYNovelReader/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ozner.GYNovelReader;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B7FE9C301E56C6D400CA3433 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = UZZG6NM74T;
+				INFOPLIST_FILE = GYNovelReaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ozner.GYNovelReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GYNovelReader.app/GYNovelReader";
+			};
+			name = Debug;
+		};
+		B7FE9C311E56C6D400CA3433 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = UZZG6NM74T;
+				INFOPLIST_FILE = GYNovelReaderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ozner.GYNovelReaderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GYNovelReader.app/GYNovelReader";
+			};
+			name = Release;
+		};
+		B7FE9C331E56C6D400CA3433 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = UZZG6NM74T;
+				INFOPLIST_FILE = GYNovelReaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ozner.GYNovelReaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GYNovelReader;
+			};
+			name = Debug;
+		};
+		B7FE9C341E56C6D400CA3433 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = UZZG6NM74T;
+				INFOPLIST_FILE = GYNovelReaderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ozner.GYNovelReaderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GYNovelReader;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7FE9BFF1E56C6D400CA3433 /* Build configuration list for PBXProject "GYNovelReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7FE9C2A1E56C6D400CA3433 /* Debug */,
+				B7FE9C2B1E56C6D400CA3433 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7FE9C2C1E56C6D400CA3433 /* Build configuration list for PBXNativeTarget "GYNovelReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7FE9C2D1E56C6D400CA3433 /* Debug */,
+				B7FE9C2E1E56C6D400CA3433 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7FE9C2F1E56C6D400CA3433 /* Build configuration list for PBXNativeTarget "GYNovelReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7FE9C301E56C6D400CA3433 /* Debug */,
+				B7FE9C311E56C6D400CA3433 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7FE9C321E56C6D400CA3433 /* Build configuration list for PBXNativeTarget "GYNovelReaderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7FE9C331E56C6D400CA3433 /* Debug */,
+				B7FE9C341E56C6D400CA3433 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7FE9BFC1E56C6D400CA3433 /* Project object */;
+}

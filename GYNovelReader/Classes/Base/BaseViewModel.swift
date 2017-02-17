@@ -14,7 +14,7 @@
 //  Real developers ship.
 
 import UIKit
-import GYNetWorking
+
 
 typealias SuccessBlock = (Any) -> Void
 typealias ErrorCodeBlock = (Any) -> Void
@@ -26,6 +26,11 @@ class BaseViewModel: NSObject {
     var returnBlock:SuccessBlock?
     var errorBlock: ErrorCodeBlock?
     var failureblock: FailureBlock?
+    
+    override init() {
+        super.init()
+        
+    }
     
     init(_ returnBlock: SuccessBlock?, errorBlock: ErrorCodeBlock?,failureblock: FailureBlock?) {
         super.init()

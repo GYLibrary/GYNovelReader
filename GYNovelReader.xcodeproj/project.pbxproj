@@ -22,6 +22,9 @@
 		B7FE9C4C1E56F07600CA3433 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE9C4B1E56F07600CA3433 /* BaseViewModel.swift */; };
 		B7FE9C4E1E56F75C00CA3433 /* LikeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE9C4D1E56F75C00CA3433 /* LikeViewModel.swift */; };
 		B7FE9C501E56F89F00CA3433 /* GYTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE9C4F1E56F89F00CA3433 /* GYTools.swift */; };
+		B7FE9C521E56FF3A00CA3433 /* LikeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE9C511E56FF3A00CA3433 /* LikeTableViewCell.swift */; };
+		B7FE9C561E57000800CA3433 /* GYUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE9C551E57000800CA3433 /* GYUIImageView.swift */; };
+		B7FE9C581E57006F00CA3433 /* GYLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE9C571E57006F00CA3433 /* GYLabel.swift */; };
 		D0210A326ED48C2C41678EB8 /* Pods_GYNovelReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7516440D882262968052AA7 /* Pods_GYNovelReader.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +70,9 @@
 		B7FE9C4B1E56F07600CA3433 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		B7FE9C4D1E56F75C00CA3433 /* LikeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeViewModel.swift; sourceTree = "<group>"; };
 		B7FE9C4F1E56F89F00CA3433 /* GYTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYTools.swift; sourceTree = "<group>"; };
+		B7FE9C511E56FF3A00CA3433 /* LikeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeTableViewCell.swift; sourceTree = "<group>"; };
+		B7FE9C551E57000800CA3433 /* GYUIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYUIImageView.swift; sourceTree = "<group>"; };
+		B7FE9C571E57006F00CA3433 /* GYLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +195,7 @@
 		B7FE9C3C1E56EC9700CA3433 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				B7FE9C541E56FFF000CA3433 /* BaseUIKit */,
 				B7FE9C4B1E56F07600CA3433 /* BaseViewModel.swift */,
 				B7FE9C471E56ED6F00CA3433 /* GYNavViewController.swift */,
 				B7FE9C451E56ED0800CA3433 /* BaseViewController.swift */,
@@ -217,6 +224,7 @@
 		B7FE9C3F1E56EC9700CA3433 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B7FE9C511E56FF3A00CA3433 /* LikeTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -258,6 +266,15 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B7FE9C541E56FFF000CA3433 /* BaseUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				B7FE9C571E57006F00CA3433 /* GYLabel.swift */,
+				B7FE9C551E57000800CA3433 /* GYUIImageView.swift */,
+			);
+			path = BaseUIKit;
 			sourceTree = "<group>";
 		};
 		F94B1AB681DE934A132A0BF5 /* Pods */ = {
@@ -459,13 +476,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7FE9C391E56C9F300CA3433 /* NetWorkTool.swift in Sources */,
+				B7FE9C561E57000800CA3433 /* GYUIImageView.swift in Sources */,
 				B7FE9C461E56ED0800CA3433 /* BaseViewController.swift in Sources */,
 				B7FE9C501E56F89F00CA3433 /* GYTools.swift in Sources */,
 				B7FE9C0A1E56C6D400CA3433 /* ViewController.swift in Sources */,
 				B7FE9C4C1E56F07600CA3433 /* BaseViewModel.swift in Sources */,
 				B7FE9C081E56C6D400CA3433 /* GYAppDelegate.swift in Sources */,
 				B7FE9C481E56ED6F00CA3433 /* GYNavViewController.swift in Sources */,
+				B7FE9C581E57006F00CA3433 /* GYLabel.swift in Sources */,
 				B7FE9C4A1E56EDC200CA3433 /* LikeViewController.swift in Sources */,
+				B7FE9C521E56FF3A00CA3433 /* LikeTableViewCell.swift in Sources */,
 				B7FE9C4E1E56F75C00CA3433 /* LikeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

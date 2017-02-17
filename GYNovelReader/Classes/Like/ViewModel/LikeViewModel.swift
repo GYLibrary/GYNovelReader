@@ -14,10 +14,24 @@
 //  Real developers ship.
 
 import UIKit
+import GYNetWorking
 
 class LikeViewModel: BaseViewModel {
     
-    
+    func getLikeList(_ page: Int) {
+        
+        NetWorkTool.instance.requestForResultJsonrequest(method: GYNetWorkMethod.POST, pathKey: "LikeList", params: ["page":page]) { (reslut) in
+            
+            switch reslut! {
+            case .sucess(let value):
+                Print(value)
+            case .failure(let error):
+                Print(error)
+            }
+            
+        }
+        
+    }
     
     
     override func setValueData(_ value: Any) {

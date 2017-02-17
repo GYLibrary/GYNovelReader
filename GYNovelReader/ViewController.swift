@@ -19,18 +19,9 @@ class ViewController: UIViewController {
         
         dump(dic)
         
+        LikeViewModel().getLikeList(1)
         
-        
-        NetWorkTool.instance.requestForResultJsonrequest(method: GYNetWorkMethod.POST, pathKey: "LikeList", params: ["page":"1"]) { (reslut) in
-            
-            switch reslut! {
-            case .sucess(let value):
-                Print(value)
-            case .failure(let error):
-                Print(error)
-            }
-            
-        }
+      
         
     }
 

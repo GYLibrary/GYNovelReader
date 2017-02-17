@@ -3,11 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>WebRoot</key>
-	<string>https://app.kujiang.com</string>
+	<string>https://app.kujiang.com/v1</string>
 	<key>Path</key>
 	<dict>
 		<key>QQLogin</key>
-		<string>/v1/qq/login</string>
+		<string>/qq/login</string>
+		<key>WeiBoLogin</key>
+		<string>/weibo/login</string>
+		<key>LikeList</key>
+		<string>/user/get_user_zhuishu</string>
 	</dict>
 	<key>Params</key>
 	<dict/>

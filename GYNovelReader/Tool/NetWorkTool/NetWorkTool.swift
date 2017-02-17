@@ -44,7 +44,6 @@ class NetWorkTool: NSObject {
 
 extension NetWorkTool {
     
-
     /// 通用方法 (返回JSON -> GYResult)
     ///
     /// - Parameters:
@@ -56,7 +55,10 @@ extension NetWorkTool {
         
         let url = webRoot + path[pathKey]!
         
-        return requestForJSONResult(method, url: url, params: params, resultBack: resultBack)
+        var param = params
+        param?["auth_code"] = "a3a7e8cfef43441c3983f9e22865607f"
+        
+        return requestForJSONResult(method, url: url, params: param, resultBack: resultBack)
   
     }
     

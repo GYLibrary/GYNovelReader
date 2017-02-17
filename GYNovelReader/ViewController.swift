@@ -7,12 +7,31 @@
 //
 
 import UIKit
+import GYNetWorking
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        var dic: [String:Any] = ["1":123]
+        dic["2"] = 456
+        
+        dump(dic)
+        
+        
+        
+        NetWorkTool.instance.requestForResultJsonrequest(method: GYNetWorkMethod.POST, pathKey: "LikeList", params: ["page":"1"]) { (reslut) in
+            
+            switch reslut! {
+            case .sucess(let value):
+                Print(value)
+            case .failure(let error):
+                Print(error)
+            }
+            
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

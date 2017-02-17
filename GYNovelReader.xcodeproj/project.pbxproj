@@ -16,6 +16,12 @@
 		B7FE9C281E56C6D400CA3433 /* GYNovelReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE9C271E56C6D400CA3433 /* GYNovelReaderUITests.swift */; };
 		B7FE9C391E56C9F300CA3433 /* NetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE9C381E56C9F300CA3433 /* NetWorkTool.swift */; };
 		B7FE9C3B1E56D07300CA3433 /* NetWorkTool.plist in Resources */ = {isa = PBXBuildFile; fileRef = B7FE9C3A1E56D07300CA3433 /* NetWorkTool.plist */; };
+		B7FE9C461E56ED0800CA3433 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE9C451E56ED0800CA3433 /* BaseViewController.swift */; };
+		B7FE9C481E56ED6F00CA3433 /* GYNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE9C471E56ED6F00CA3433 /* GYNavViewController.swift */; };
+		B7FE9C4A1E56EDC200CA3433 /* LikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE9C491E56EDC200CA3433 /* LikeViewController.swift */; };
+		B7FE9C4C1E56F07600CA3433 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE9C4B1E56F07600CA3433 /* BaseViewModel.swift */; };
+		B7FE9C4E1E56F75C00CA3433 /* LikeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE9C4D1E56F75C00CA3433 /* LikeViewModel.swift */; };
+		B7FE9C501E56F89F00CA3433 /* GYTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE9C4F1E56F89F00CA3433 /* GYTools.swift */; };
 		D0210A326ED48C2C41678EB8 /* Pods_GYNovelReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7516440D882262968052AA7 /* Pods_GYNovelReader.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +61,12 @@
 		B7FE9C291E56C6D400CA3433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7FE9C381E56C9F300CA3433 /* NetWorkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkTool.swift; sourceTree = "<group>"; };
 		B7FE9C3A1E56D07300CA3433 /* NetWorkTool.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NetWorkTool.plist; sourceTree = "<group>"; };
+		B7FE9C451E56ED0800CA3433 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B7FE9C471E56ED6F00CA3433 /* GYNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYNavViewController.swift; sourceTree = "<group>"; };
+		B7FE9C491E56EDC200CA3433 /* LikeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeViewController.swift; sourceTree = "<group>"; };
+		B7FE9C4B1E56F07600CA3433 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		B7FE9C4D1E56F75C00CA3433 /* LikeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeViewModel.swift; sourceTree = "<group>"; };
+		B7FE9C4F1E56F89F00CA3433 /* GYTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GYTools.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +161,9 @@
 		B7FE9C351E56C93D00CA3433 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B7FE9C3C1E56EC9700CA3433 /* Base */,
+				B7FE9C3D1E56EC9700CA3433 /* Like */,
+				B7FE9C411E56EC9700CA3433 /* Read */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -157,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				B7FE9C371E56C94400CA3433 /* NetWorkTool */,
+				B7FE9C4F1E56F89F00CA3433 /* GYTools.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -168,6 +184,80 @@
 				B7FE9C3A1E56D07300CA3433 /* NetWorkTool.plist */,
 			);
 			path = NetWorkTool;
+			sourceTree = "<group>";
+		};
+		B7FE9C3C1E56EC9700CA3433 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B7FE9C4B1E56F07600CA3433 /* BaseViewModel.swift */,
+				B7FE9C471E56ED6F00CA3433 /* GYNavViewController.swift */,
+				B7FE9C451E56ED0800CA3433 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B7FE9C3D1E56EC9700CA3433 /* Like */ = {
+			isa = PBXGroup;
+			children = (
+				B7FE9C3E1E56EC9700CA3433 /* Model */,
+				B7FE9C3F1E56EC9700CA3433 /* View */,
+				B7FE9C401E56EC9700CA3433 /* ViewModel */,
+				B7FE9C491E56EDC200CA3433 /* LikeViewController.swift */,
+			);
+			path = Like;
+			sourceTree = "<group>";
+		};
+		B7FE9C3E1E56EC9700CA3433 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B7FE9C3F1E56EC9700CA3433 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B7FE9C401E56EC9700CA3433 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B7FE9C4D1E56F75C00CA3433 /* LikeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B7FE9C411E56EC9700CA3433 /* Read */ = {
+			isa = PBXGroup;
+			children = (
+				B7FE9C421E56EC9700CA3433 /* Model */,
+				B7FE9C431E56EC9700CA3433 /* View */,
+				B7FE9C441E56EC9700CA3433 /* ViewModel */,
+			);
+			path = Read;
+			sourceTree = "<group>";
+		};
+		B7FE9C421E56EC9700CA3433 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B7FE9C431E56EC9700CA3433 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B7FE9C441E56EC9700CA3433 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F94B1AB681DE934A132A0BF5 /* Pods */ = {
@@ -369,8 +459,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7FE9C391E56C9F300CA3433 /* NetWorkTool.swift in Sources */,
+				B7FE9C461E56ED0800CA3433 /* BaseViewController.swift in Sources */,
+				B7FE9C501E56F89F00CA3433 /* GYTools.swift in Sources */,
 				B7FE9C0A1E56C6D400CA3433 /* ViewController.swift in Sources */,
+				B7FE9C4C1E56F07600CA3433 /* BaseViewModel.swift in Sources */,
 				B7FE9C081E56C6D400CA3433 /* GYAppDelegate.swift in Sources */,
+				B7FE9C481E56ED6F00CA3433 /* GYNavViewController.swift in Sources */,
+				B7FE9C4A1E56EDC200CA3433 /* LikeViewController.swift in Sources */,
+				B7FE9C4E1E56F75C00CA3433 /* LikeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

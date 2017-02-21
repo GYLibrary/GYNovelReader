@@ -99,6 +99,9 @@ class LikeViewController: BaseViewController ,UITableViewDelegate,UITableViewDat
         let cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(LikeTableViewCell.self)) as! LikeTableViewCell
         
 //        cell.backgroundColor = UIColor.red
+        let model = dataArr[indexPath.row] as LikeModel
+        
+        cell.reloadUI(model)
         
         return cell
         

@@ -16,6 +16,7 @@
 
 import UIKit
 import SnapKit
+import Kingfisher
 
 class LikeTableViewCell: UITableViewCell {
 
@@ -37,10 +38,15 @@ class LikeTableViewCell: UITableViewCell {
         loadUI()
     }
     
-    fileprivate func reloadUI(_ model: LikeModel) {
+    func reloadUI(_ model: LikeModel) {
         
-        bookImageView = nil
-        
+        bookImageView?.kf.setImage(with:URL(string: model.img_url!) , placeholder: nil, options: nil, progressBlock: { (a, b) in
+            Print(a)
+            Print(b)
+        }, completionHandler: nil)
+        bookTitleLb?.text = model.v_book
+        updateTiemLb?.text = model.u_time
+        updateChapterLb?.text = model.v_u_chapter
     }
     
     fileprivate func loadUI() {

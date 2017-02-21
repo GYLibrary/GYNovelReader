@@ -8,4 +8,5 @@ target 'GYNovelReader' do
     pod 'ObjectMapper','~> 2.2.2'
     pod 'MJRefresh','~> 3.1.12'
     pod 'GYNavTranstion','~> 0.0.2'
+    pod 'Kingfisher'
 end

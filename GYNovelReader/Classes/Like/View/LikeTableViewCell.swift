@@ -15,6 +15,7 @@
 
 
 import UIKit
+import SnapKit
 
 class LikeTableViewCell: UITableViewCell {
 
@@ -22,19 +23,63 @@ class LikeTableViewCell: UITableViewCell {
     var bookImageView: UIImageView?
     var bookTitleLb: GYLabel?
     var updateTiemLb: GYLabel?
+    var updateChapterLb: GYLabel?
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        
+        loadUI()
     }
-    
    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        loadUI()
     }
 
+    
+    fileprivate func loadUI() {
+        
+        bookImageView = UIImageView()
+        addSubview(bookImageView!)
+        
+        bookTitleLb = GYLabel()
+        addSubview(bookTitleLb!)
+        
+        updateTiemLb = GYLabel()
+        addSubview(updateTiemLb!)
+        
+        updateChapterLb = GYLabel()
+        addSubview(updateChapterLb!)
+        
+        bookImageView?.snp.makeConstraints({ (make) in
+            make.top.equalTo(self.contentView.snp.top).offset(10)
+            make.left.equalTo(self.contentView.snp.left).offset(10)
+            make.bottom.equalTo(self.contentView.snp.bottom).offset(-10)
+            make.width.equalTo(200).multipliedBy(0.5)
+        })
+     
+        bookTitleLb?.snp.makeConstraints({ (make) in
+            make.top.equalTo((bookImageView?.snp.top)!)
+            make.left.equalTo((bookImageView?.snp.right)!).offset(10)
+            make.height.equalTo(20)
+            
+        })
+        
+        updateTiemLb?.snp.makeConstraints({ (make) in
+            make.bottom.equalTo(self.contentView).offset(-2)
+            make.left.equalTo((bookTitleLb?.snp.left)!)
+            make.height.equalTo(20)
+            
+        })
+        
+        updateChapterLb?.snp.makeConstraints({ (make) in
+            make.top.equalTo((updateTiemLb?.snp.top)!)
+            make.left.equalTo((updateTiemLb?.snp.right)!).offset(10)
+            make.height.equalTo((updateTiemLb?.snp.height)!)
+        })
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 

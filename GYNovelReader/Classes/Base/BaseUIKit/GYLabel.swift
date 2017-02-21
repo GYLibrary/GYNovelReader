@@ -42,6 +42,7 @@ class GYLabel: UILabel {
         self.font = UIFont.systemFont(ofSize: 16.0)
         self.textColor = UIColor.black
         self.textAlignment = .center
+        self.text = "我最帅"
     }
     
     required init?(coder aDecoder: NSCoder) {

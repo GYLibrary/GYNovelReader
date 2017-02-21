@@ -15,13 +15,15 @@
 
 import UIKit
 
-class LikeViewController: BaseViewController {
+class LikeViewController: BaseViewController ,UITableViewDelegate,UITableViewDataSource{
     
     //MARK: - Attributes
+    var tableView: UITableView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        instanceUI()
     }
     
     //MARK: - Override
@@ -29,6 +31,17 @@ class LikeViewController: BaseViewController {
     
     //MARK: - Initial Methods
     
+    fileprivate func instanceUI() {
+        
+        tableView = UITableView()
+        tableView?.frame = self.view.bounds
+        tableView?.delegate = self
+        tableView?.dataSource = self
+        view.addSubview(tableView!)
+        
+        tableView?.register(LikeTableViewCell.self, forCellReuseIdentifier: NSStringFromClass(LikeTableViewCell.self))
+        
+    }
     
     //MARK: - Delegate
     
@@ -44,6 +57,27 @@ class LikeViewController: BaseViewController {
     
     //MARK: - UITableViewDelegate, UITableViewDataSource
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(LikeTableViewCell.self)) as! LikeTableViewCell
+        
+//        cell.backgroundColor = UIColor.red
+        
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
+    }
     
     //MARK: - Privater Methods
     

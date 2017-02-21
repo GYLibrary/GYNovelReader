@@ -19,11 +19,23 @@ class LikeViewController: BaseViewController ,UITableViewDelegate,UITableViewDat
     
     //MARK: - Attributes
     var tableView: UITableView?
+    
+    var viewModle: LikeViewModel?
+    
+    var dataArr: [LikeModel] = [] {
+        didSet {
+            DispatchQueue.main.async {
+                self.tableView?.reloadData()
+            }
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         instanceUI()
+        
+        getDatas()
     }
     
     //MARK: - Override
@@ -33,6 +45,8 @@ class LikeViewController: BaseViewController ,UITableViewDelegate,UITableViewDat
     
     fileprivate func instanceUI() {
         
+        hideLeftBtn()
+        
         tableView = UITableView()
         tableView?.frame = self.view.bounds
         tableView?.delegate = self
@@ -41,6 +55,21 @@ class LikeViewController: BaseViewController ,UITableViewDelegate,UITableViewDat
         
         tableView?.register(LikeTableViewCell.self, forCellReuseIdentifier: NSStringFromClass(LikeTableViewCell.self))
         
+    }
+    
+    fileprivate func getDatas() {
+        
+        weak var weakSelf = self
+        viewModle = LikeViewModel({ (success) in
+            Print(success)
+            weakSelf?.dataArr.append(contentsOf: (success as AnyObject) as! [LikeModel])
+        }, errorBlock: { (error) in
+            Print(error)
+        }, failureblock: { (_) in
+            
+        })
+        
+        viewModle?.getLikeList(1)
     }
     
     //MARK: - Delegate
@@ -62,7 +91,7 @@ class LikeViewController: BaseViewController ,UITableViewDelegate,UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return dataArr.count 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -76,10 +105,11 @@ class LikeViewController: BaseViewController ,UITableViewDelegate,UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
+        return 160
     }
     
     //MARK: - Privater Methods
+    
     
     
     //MARK: - Setter Getter Methods

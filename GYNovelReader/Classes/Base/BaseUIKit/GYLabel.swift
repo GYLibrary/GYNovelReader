@@ -41,7 +41,7 @@ class GYLabel: UILabel {
         
         self.font = UIFont.systemFont(ofSize: 16.0)
         self.textColor = UIColor.black
-        self.textAlignment = .center
+        self.textAlignment = .left
         self.text = "我最帅"
     }
     

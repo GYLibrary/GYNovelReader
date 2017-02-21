@@ -15,16 +15,17 @@
 
 import UIKit
 import GYNetWorking
+import ObjectMapper
 
 class LikeViewModel: BaseViewModel {
     
     func getLikeList(_ page: Int) {
         
-        NetWorkTool.instance.requestForResultJsonrequest(method: GYNetWorkMethod.POST, pathKey: "LikeList", params: ["page":page]) { (reslut) in
+        NetWorkTool.instance.requestForResultJsonrequest(method: GYNetWorkMethod.POST, pathKey: "LikeList", params: ["page":page]) { [weak self] (reslut)  in
             
             switch reslut! {
             case .sucess(let value):
-                Print(value)
+               self?.setValueData(value)
             case .failure(let error):
                 Print(error)
             }
@@ -35,6 +36,17 @@ class LikeViewModel: BaseViewModel {
     
     
     override func setValueData(_ value: Any) {
+        
+        let value1 = value as! [String : Any]
+        
+        let dataArr = value1["body"]
+        
+        let arr = Mapper<LikeModel>().mapArray(JSONArray: dataArr as! [[String: Any]])
+        
+        if (arr?.count)! > 0 {
+            self.returnBlock!(arr!)
+        }
+        
         
     }
 

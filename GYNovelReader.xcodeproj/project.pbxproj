@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B78FC59A1E5C6ACA00F91E5B /* LikeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78FC5991E5C6ACA00F91E5B /* LikeModel.swift */; };
 		B7FE9C081E56C6D400CA3433 /* GYAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE9C071E56C6D400CA3433 /* GYAppDelegate.swift */; };
 		B7FE9C0A1E56C6D400CA3433 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE9C091E56C6D400CA3433 /* ViewController.swift */; };
 		B7FE9C0D1E56C6D400CA3433 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7FE9C0B1E56C6D400CA3433 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		2ADB45918241A4ACA44FB21D /* Pods-GYNovelReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYNovelReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-GYNovelReader/Pods-GYNovelReader.release.xcconfig"; sourceTree = "<group>"; };
 		ACED9FE0C8C89B90B9782327 /* Pods-GYNovelReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYNovelReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GYNovelReader/Pods-GYNovelReader.debug.xcconfig"; sourceTree = "<group>"; };
 		B7516440D882262968052AA7 /* Pods_GYNovelReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GYNovelReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B78FC5991E5C6ACA00F91E5B /* LikeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeModel.swift; sourceTree = "<group>"; };
 		B7FE9C041E56C6D400CA3433 /* GYNovelReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYNovelReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7FE9C071E56C6D400CA3433 /* GYAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYAppDelegate.swift; sourceTree = "<group>"; };
 		B7FE9C091E56C6D400CA3433 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 		B7FE9C3E1E56EC9700CA3433 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B78FC5991E5C6ACA00F91E5B /* LikeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 				B7FE9C391E56C9F300CA3433 /* NetWorkTool.swift in Sources */,
 				B7FE9C561E57000800CA3433 /* GYUIImageView.swift in Sources */,
 				B7FE9C461E56ED0800CA3433 /* BaseViewController.swift in Sources */,
+				B78FC59A1E5C6ACA00F91E5B /* LikeModel.swift in Sources */,
 				B7FE9C501E56F89F00CA3433 /* GYTools.swift in Sources */,
 				B7FE9C0A1E56C6D400CA3433 /* ViewController.swift in Sources */,
 				B7FE9C4C1E56F07600CA3433 /* BaseViewModel.swift in Sources */,

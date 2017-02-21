@@ -20,8 +20,7 @@ class GYAppDelegate: UIResponder, UIApplicationDelegate {
         
         window?.backgroundColor = UIColor.white
         window?.makeKeyAndVisible()
-        
-        window?.rootViewController = LikeViewController()
+        window?.rootViewController = GYNavViewController(rootViewController: LikeViewController())
         
         
         

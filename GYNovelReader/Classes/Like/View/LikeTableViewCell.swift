@@ -36,27 +36,33 @@ class LikeTableViewCell: UITableViewCell {
         // Initialization code
         loadUI()
     }
-
+    
+    fileprivate func reloadUI(_ model: LikeModel) {
+        
+        bookImageView = nil
+        
+    }
     
     fileprivate func loadUI() {
         
         bookImageView = UIImageView()
-        addSubview(bookImageView!)
+        contentView.addSubview(bookImageView!)
         
         bookTitleLb = GYLabel()
-        addSubview(bookTitleLb!)
+        contentView.addSubview(bookTitleLb!)
         
         updateTiemLb = GYLabel()
-        addSubview(updateTiemLb!)
+        contentView.addSubview(updateTiemLb!)
         
         updateChapterLb = GYLabel()
-        addSubview(updateChapterLb!)
+        contentView.addSubview(updateChapterLb!)
         
         bookImageView?.snp.makeConstraints({ (make) in
-            make.top.equalTo(self.contentView.snp.top).offset(10)
-            make.left.equalTo(self.contentView.snp.left).offset(10)
-            make.bottom.equalTo(self.contentView.snp.bottom).offset(-10)
-            make.width.equalTo(200).multipliedBy(0.5)
+            make.top.equalTo(self.contentView).offset(10)
+            make.left.equalTo(self.contentView).offset(10)
+            make.bottom.equalTo(self.contentView).offset(-10)
+            make.width.equalTo((bookImageView?.snp.height)!).multipliedBy(0.5)
+            
         })
      
         bookTitleLb?.snp.makeConstraints({ (make) in
@@ -70,7 +76,7 @@ class LikeTableViewCell: UITableViewCell {
             make.bottom.equalTo(self.contentView).offset(-2)
             make.left.equalTo((bookTitleLb?.snp.left)!)
             make.height.equalTo(20)
-            
+            make.width.greaterThanOrEqualTo(60)
         })
         
         updateChapterLb?.snp.makeConstraints({ (make) in

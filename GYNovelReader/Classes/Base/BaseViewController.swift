@@ -18,13 +18,15 @@ import UIKit
 class BaseViewController: UIViewController {
     
     //MARK: - Attributes
-
+    
+    fileprivate var backBtn:UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor.white
         
-        let backBtn = UIButton()
+        backBtn = UIButton()
         backBtn.setImage(UIImage(named: "backBg"), for: UIControlState.normal)
         backBtn.frame = CGRect(x: 0, y: 0, width: 20, height: 30)
         backBtn.addTarget(self, action: #selector(BaseViewController.backAction), for: UIControlEvents.touchUpInside)
@@ -59,6 +61,9 @@ class BaseViewController: UIViewController {
     
     //MARK: - Privater Methods
     
+    func hideLeftBtn() {
+        backBtn.isHidden = true
+    }
     
     //MARK: - Setter Getter Methods
     

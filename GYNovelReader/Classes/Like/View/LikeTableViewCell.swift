@@ -67,7 +67,7 @@ class LikeTableViewCell: UITableViewCell {
             make.top.equalTo(self.contentView).offset(10)
             make.left.equalTo(self.contentView).offset(10)
             make.bottom.equalTo(self.contentView).offset(-10)
-            make.width.equalTo((bookImageView?.snp.height)!).multipliedBy(0.5)
+            make.width.equalTo((bookImageView?.snp.height)!).multipliedBy(0.7)
             
         })
      
@@ -79,7 +79,8 @@ class LikeTableViewCell: UITableViewCell {
         })
         
         updateTiemLb?.snp.makeConstraints({ (make) in
-            make.bottom.equalTo(self.contentView).offset(-2)
+//            make.bottom.equalTo(self.contentView).offset(-2)
+            make.centerY.equalTo((bookImageView?.snp.centerY)!)
             make.left.equalTo((bookTitleLb?.snp.left)!)
             make.height.equalTo(20)
             make.width.greaterThanOrEqualTo(60)

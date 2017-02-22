@@ -14,6 +14,7 @@
 //  Real developers ship.
 
 import UIKit
+import MJRefresh
 
 class LikeViewController: BaseViewController ,UITableViewDelegate,UITableViewDataSource{
     
@@ -21,6 +22,8 @@ class LikeViewController: BaseViewController ,UITableViewDelegate,UITableViewDat
     var tableView: UITableView?
     
     var viewModle: LikeViewModel?
+    
+    var pageIndex: NSInteger!
     
     var dataArr: [LikeModel] = [] {
         didSet {
@@ -47,6 +50,7 @@ class LikeViewController: BaseViewController ,UITableViewDelegate,UITableViewDat
         
         hideLeftBtn()
         
+        pageIndex = 1
         tableView = UITableView()
         tableView?.frame = self.view.bounds
         tableView?.delegate = self
@@ -55,6 +59,19 @@ class LikeViewController: BaseViewController ,UITableViewDelegate,UITableViewDat
         
         tableView?.register(LikeTableViewCell.self, forCellReuseIdentifier: NSStringFromClass(LikeTableViewCell.self))
         
+        tableView?.mj_header = MJRefreshNormalHeader.init(refreshingBlock: { [weak self] () -> Void in
+            
+            self?.pageIndex = 1
+            self?.viewModle?.getLikeList((self?.pageIndex)!)
+            
+        })
+        
+        tableView?.mj_footer = MJRefreshAutoNormalFooter.init(refreshingBlock: { [weak self] () -> Void in
+            
+            self?.pageIndex = (self?.pageIndex)! + 1
+            self?.viewModle?.getLikeList((self?.pageIndex)!)
+            
+        })
     }
     
     fileprivate func getDatas() {
@@ -62,11 +79,25 @@ class LikeViewController: BaseViewController ,UITableViewDelegate,UITableViewDat
         weak var weakSelf = self
         viewModle = LikeViewModel({ (success) in
             Print(success)
-            weakSelf?.dataArr.append(contentsOf: (success as AnyObject) as! [LikeModel])
+            weakSelf?.tableView?.mj_header.endRefreshing()
+            weakSelf?.tableView?.mj_footer.endRefreshing()
+            
+            if weakSelf?.pageIndex == 0 {
+                weakSelf?.dataArr.removeAll()
+                weakSelf?.dataArr.append(contentsOf: (success as AnyObject) as! [LikeModel])
+                
+            } else {
+                
+                weakSelf?.dataArr.append(contentsOf: (success as AnyObject) as! [LikeModel])
+            }
+            
         }, errorBlock: { (error) in
             Print(error)
+            weakSelf?.tableView?.mj_header.endRefreshing()
+            weakSelf?.tableView?.mj_footer.endRefreshing()
         }, failureblock: { (_) in
-            
+            weakSelf?.tableView?.mj_header.endRefreshing()
+            weakSelf?.tableView?.mj_footer.endRefreshing()
         })
         
         viewModle?.getLikeList(1)
@@ -108,7 +139,7 @@ class LikeViewController: BaseViewController ,UITableViewDelegate,UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 160
+        return 150
     }
     
     //MARK: - Privater Methods

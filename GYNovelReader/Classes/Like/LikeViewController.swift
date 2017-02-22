@@ -56,6 +56,7 @@ class LikeViewController: BaseViewController ,UITableViewDelegate,UITableViewDat
         tableView?.delegate = self
         tableView?.dataSource = self
         view.addSubview(tableView!)
+        tableView?.tableFooterView = UIView()
         
         tableView?.register(LikeTableViewCell.self, forCellReuseIdentifier: NSStringFromClass(LikeTableViewCell.self))
         
@@ -72,6 +73,9 @@ class LikeViewController: BaseViewController ,UITableViewDelegate,UITableViewDat
             self?.viewModle?.getLikeList((self?.pageIndex)!)
             
         })
+        
+        tableView?.mj_footer.isAutomaticallyHidden = true
+        
     }
     
     fileprivate func getDatas() {
@@ -82,13 +86,22 @@ class LikeViewController: BaseViewController ,UITableViewDelegate,UITableViewDat
             weakSelf?.tableView?.mj_header.endRefreshing()
             weakSelf?.tableView?.mj_footer.endRefreshing()
             
-            if weakSelf?.pageIndex == 0 {
+            let arr = (success as AnyObject) as! [LikeModel]
+            
+            if arr.count < 10 {
+                
+                DispatchQueue.main.async {
+                    weakSelf?.tableView?.mj_footer.endRefreshingWithNoMoreData()
+                }
+               
+            }
+            
+            if weakSelf?.pageIndex == 1 {
                 weakSelf?.dataArr.removeAll()
-                weakSelf?.dataArr.append(contentsOf: (success as AnyObject) as! [LikeModel])
+                weakSelf?.dataArr.append(contentsOf: arr)
                 
             } else {
-                
-                weakSelf?.dataArr.append(contentsOf: (success as AnyObject) as! [LikeModel])
+                weakSelf?.dataArr.append(contentsOf: arr)
             }
             
         }, errorBlock: { (error) in
@@ -129,7 +142,8 @@ class LikeViewController: BaseViewController ,UITableViewDelegate,UITableViewDat
         
         let cell = tableView.dequeueReusableCell(withIdentifier: NSStringFromClass(LikeTableViewCell.self)) as! LikeTableViewCell
         
-//        cell.backgroundColor = UIColor.red
+        cell.selectionStyle = .none
+        
         let model = dataArr[indexPath.row] as LikeModel
         
         cell.reloadUI(model)
@@ -139,7 +153,7 @@ class LikeViewController: BaseViewController ,UITableViewDelegate,UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
+        return 130
     }
     
     //MARK: - Privater Methods

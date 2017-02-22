@@ -12,6 +12,8 @@
 		<string>/weibo/login</string>
 		<key>LikeList</key>
 		<string>/user/get_user_zhuishu</string>
+		<key>ReadNew</key>
+		<string>/book/read_new</string>
 	</dict>
 	<key>Params</key>
 	<dict/>

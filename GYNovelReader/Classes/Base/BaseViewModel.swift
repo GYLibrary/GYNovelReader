@@ -41,10 +41,18 @@ class BaseViewModel: NSObject {
         
     }
     
-//    static func setBlock(_ returnBlock: SuccessBlock?, errorBlock: ErrorCodeBlock?,failureBlock: FailureBlock?) {
-//        self.returnBlock = returnBlock
-//        
-//    }
+    
+    /// 接收传回来的block
+    ///
+    /// - Parameters:
+    ///   - returnBlock: returnBlock description
+    ///   - errorBlock: errorBlock description
+    ///   - failureBlock: failureBlock description
+    func setBlock(_ returnBlock: SuccessBlock?, errorBlock: ErrorCodeBlock?,failureBlock: FailureBlock?) {
+        self.returnBlock = returnBlock
+        self.errorBlock = errorBlock
+        self.failureblock = failureBlock
+    }
     
     func setValueData(_ value:Any){
         

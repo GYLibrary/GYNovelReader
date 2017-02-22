@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B71D86211E5D826600B270A5 /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71D86201E5D826600B270A5 /* BookViewModel.swift */; };
+		B71D86231E5D86B100B270A5 /* BookReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71D86221E5D86B100B270A5 /* BookReadViewController.swift */; };
 		B78FC59A1E5C6ACA00F91E5B /* LikeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78FC5991E5C6ACA00F91E5B /* LikeModel.swift */; };
 		B7FE9C081E56C6D400CA3433 /* GYAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE9C071E56C6D400CA3433 /* GYAppDelegate.swift */; };
 		B7FE9C0A1E56C6D400CA3433 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FE9C091E56C6D400CA3433 /* ViewController.swift */; };
@@ -49,6 +51,8 @@
 /* Begin PBXFileReference section */
 		2ADB45918241A4ACA44FB21D /* Pods-GYNovelReader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYNovelReader.release.xcconfig"; path = "Pods/Target Support Files/Pods-GYNovelReader/Pods-GYNovelReader.release.xcconfig"; sourceTree = "<group>"; };
 		ACED9FE0C8C89B90B9782327 /* Pods-GYNovelReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GYNovelReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GYNovelReader/Pods-GYNovelReader.debug.xcconfig"; sourceTree = "<group>"; };
+		B71D86201E5D826600B270A5 /* BookViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookViewModel.swift; sourceTree = "<group>"; };
+		B71D86221E5D86B100B270A5 /* BookReadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookReadViewController.swift; sourceTree = "<group>"; };
 		B7516440D882262968052AA7 /* Pods_GYNovelReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GYNovelReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B78FC5991E5C6ACA00F91E5B /* LikeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeModel.swift; sourceTree = "<group>"; };
 		B7FE9C041E56C6D400CA3433 /* GYNovelReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GYNovelReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -212,6 +216,7 @@
 				B7FE9C3F1E56EC9700CA3433 /* View */,
 				B7FE9C401E56EC9700CA3433 /* ViewModel */,
 				B7FE9C491E56EDC200CA3433 /* LikeViewController.swift */,
+				B71D86221E5D86B100B270A5 /* BookReadViewController.swift */,
 			);
 			path = Like;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				B7FE9C4D1E56F75C00CA3433 /* LikeViewModel.swift */,
+				B71D86201E5D826600B270A5 /* BookViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -478,7 +484,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B71D86231E5D86B100B270A5 /* BookReadViewController.swift in Sources */,
 				B7FE9C391E56C9F300CA3433 /* NetWorkTool.swift in Sources */,
+				B71D86211E5D826600B270A5 /* BookViewModel.swift in Sources */,
 				B7FE9C561E57000800CA3433 /* GYUIImageView.swift in Sources */,
 				B7FE9C461E56ED0800CA3433 /* BaseViewController.swift in Sources */,
 				B78FC59A1E5C6ACA00F91E5B /* LikeModel.swift in Sources */,

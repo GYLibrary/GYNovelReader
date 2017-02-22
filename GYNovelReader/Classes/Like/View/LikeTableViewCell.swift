@@ -62,6 +62,11 @@ class LikeTableViewCell: UITableViewCell {
         
         updateChapterLb = GYLabel()
         contentView.addSubview(updateChapterLb!)
+        updateTiemLb?.font = UIFont.systemFont(ofSize: 12)
+        updateChapterLb?.font = UIFont.systemFont(ofSize: 12)
+        
+        updateTiemLb?.textColor = UIColor.darkGray
+        updateChapterLb?.textColor = UIColor.darkGray
         
         bookImageView?.snp.makeConstraints({ (make) in
             make.top.equalTo(self.contentView).offset(10)
@@ -83,13 +88,14 @@ class LikeTableViewCell: UITableViewCell {
             make.centerY.equalTo((bookImageView?.snp.centerY)!)
             make.left.equalTo((bookTitleLb?.snp.left)!)
             make.height.equalTo(20)
-            make.width.greaterThanOrEqualTo(60)
+            make.width.greaterThanOrEqualTo(40)
         })
         
         updateChapterLb?.snp.makeConstraints({ (make) in
             make.top.equalTo((updateTiemLb?.snp.top)!)
             make.left.equalTo((updateTiemLb?.snp.right)!).offset(10)
             make.height.equalTo((updateTiemLb?.snp.height)!)
+            make.right.lessThanOrEqualTo(self.contentView).offset(-10)
         })
     }
     

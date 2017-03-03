@@ -9,4 +9,5 @@ target 'GYNovelReader' do
     pod 'MJRefresh','~> 3.1.12'
     pod 'GYNavTranstion','~> 0.0.2'
     pod 'Kingfisher'
+    pod 'RealmSwift'
 end
